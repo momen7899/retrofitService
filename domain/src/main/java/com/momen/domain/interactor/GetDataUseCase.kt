@@ -19,7 +19,7 @@ class GetDataUseCase @Inject constructor(
 
     class Params private constructor(val pagination: Int) {
         companion object {
-            fun acceptTrip(pagination: Int) = Params(pagination)
+            fun forGetData(pagination: Int) = Params(pagination)
         }
     }
 }

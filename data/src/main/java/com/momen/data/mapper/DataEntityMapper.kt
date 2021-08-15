@@ -2,8 +2,9 @@ package com.momen.data.mapper
 
 import com.momen.data.entitty.DataResponseEntity
 import com.momen.domain.model.DataResponse
+import javax.inject.Inject
 
-class DataEntityMapper {
+class DataEntityMapper  @Inject constructor(){
 
     fun transform(data: ArrayList<DataResponseEntity>?): ArrayList<DataResponse> {
         val list = ArrayList<DataResponse>()

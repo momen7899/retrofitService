@@ -1,8 +1,9 @@
 package com.momen.retrofitservice.model
 
 import com.momen.domain.model.DataResponse
+import javax.inject.Inject
 
-class DataMapper {
+class DataMapper @Inject constructor() {
 
     fun transform(data: ArrayList<DataResponse>?): ArrayList<DataResponseModel> {
         val list = ArrayList<DataResponseModel>()
